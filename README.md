@@ -1,4 +1,4 @@
-# EasyTS - ThingSpeak + Arduino + ESP8266 
+# EasyTS - Arduino + ESP8266  + ThingSpeak + NTP
 
 Легкая и быстрая библиотека для работы с ThingSpeak и NTP сервером с помощью ESP8266. 
 
