@@ -25,13 +25,13 @@ std_connect(String ssid, String pass) - запрос на подключение
 sntp_config(int state, int timezone) - конфигурирование ntp (state - 1 это активировать, 0 - выключить, timezone - часовой пояс)
 ```
 ```sh
-String sntp_get() - получить текущее время (возвращает в виде Mon Nov 30 16:02:15 2020 )
+sntp_get() - получить текущее время (возвращает в виде Mon Nov 30 16:02:15 2020 )
 ```
 ```sh
-void send(String api_w, int field, String data) - отправить данные на TS поле и канал (api_w это API WRITE, field - поле, data - строка с записываемым значением)
+send(String api_w, int field, String data) - отправить данные на TS поле и канал (api_w это API WRITE, field - поле, data - строка с записываемым значением)
 ```
 ```sh
-int request(String api_r, int field, String channel) - запросить данные с TS (возвращает одно число, и возвращает 9 в случае ошибки)(api_r - API READ, field - нужное поле, channel - id канала)
+request(String api_r, int field, String channel) - запросить данные с TS (возвращает одно число, и возвращает 9 в случае ошибки)(api_r - API READ, field - нужное поле, channel - id канала)
 ```
 
 Функции связанные с ThingSpeak находятся на этапе доработки функционала.

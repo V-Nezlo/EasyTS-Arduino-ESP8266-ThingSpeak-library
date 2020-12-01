@@ -55,7 +55,7 @@ void EasyTS::std_connect(String ssid, String pass){
   delay(200);
 }
 
-void EasyTS::sntp_config(int state, int timezone){
+void EasyTS::sntp_config(int state, unsigned int timezone){
 	delay(10);
 	String config = "AT+CIPSNTPCFG="; config += state; config += ","; config += timezone;
 	Serial.println(config);

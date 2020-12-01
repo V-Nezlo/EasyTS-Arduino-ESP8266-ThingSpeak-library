@@ -26,7 +26,7 @@ class EasyTS {
     void reset(void);                   //перезапуск модуля wifi
     void wps_connect(void);                 //запрос на подключение по wps
     void std_connect(String ssid, String pass);       //запрос на подключение по SSID и паролю (ssid это ssid. pass это пароль)
-    void sntp_config(int state, int timezone);              //конфигурирование ntp (state - 1 это активировать, 0 - выключить, timezone - часовой пояс, например 3  - это москва)
+    void sntp_config(int state, unsigned int timezone);              //конфигурирование ntp (state - 1 это активировать, 0 - выключить, timezone - часовой пояс, например 3  - это москва)
     String sntp_get();                    //получить текущеее время (возвращает в виде Mon Nov 30 16:02:15 2020 )
     void send(String api_w, int field, String data);        //отправить данные на TS поле и канал (api_w это API WRITE, field - поле, data - строка с записываемым значением)
     int request(String api_r, int field, String channel);   //запросить данные с TS (возвращает одно число, и возвращает 9 в случае ошибки, будет доделываться)
